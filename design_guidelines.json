@@ -1,0 +1,126 @@
+{
+  "theme_and_archetype": {
+    "domain": "Web Development Agency for SMBs",
+    "theme": "Dark",
+    "archetype": "Archetype 4/7 Hybrid (High-Contrast Tech / Swiss)",
+    "core_emotion": "Technical Mastery, Trust, and High-End Professionalism",
+    "design_philosophy": "A digital 'business card' that impresses technically while remaining highly accessible to SMB owners. Deep navy backgrounds mixed with vivid mint accents to evoke a cyber-organic, precise, and modern feel. Asymmetrical bento grids, glassmorphism headers, and generous negative space."
+  },
+  "colors": {
+    "primary": {
+      "hex": "#1A1F36",
+      "description": "Deep Navy. Used for main backgrounds and large sections.",
+      "tailwind": "bg-[#1A1F36]"
+    },
+    "secondary": {
+      "hex": "#0F1322",
+      "description": "Darker Navy. Used for alternating sections and card backgrounds to create depth.",
+      "tailwind": "bg-[#0F1322]"
+    },
+    "accent": {
+      "hex": "#2ECC96",
+      "description": "Vibrant Mint Green. Used for primary CTAs, links, active states, and code highlights.",
+      "tailwind": "text-[#2ECC96] bg-[#2ECC96]"
+    },
+    "text": {
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "inverse": "#0F1322"
+    },
+    "surface": {
+      "glass": "bg-[#1A1F36]/60 backdrop-blur-xl border border-white/10",
+      "card": "bg-white/5 border border-white/10 hover:border-[#2ECC96]/40 transition-colors"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": {
+        "family": "Sora, sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap"
+      },
+      "body": {
+        "family": "Manrope, sans-serif",
+        "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      },
+      "mono_accent": {
+        "family": "JetBrains Mono, monospace",
+        "url": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+      }
+    },
+    "rules": {
+      "h1": "font-sora text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-tight",
+      "h2": "font-sora text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white",
+      "h3": "font-sora text-xl md:text-2xl font-semibold text-white",
+      "body": "font-manrope text-base md:text-lg text-slate-300 leading-relaxed",
+      "overline": "font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-[#2ECC96]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12 lg:px-24",
+    "section_padding": "py-24 md:py-32",
+    "grids": {
+      "services": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8",
+      "portfolio": "grid grid-cols-1 md:grid-cols-2 gap-8",
+      "pricing": "grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "inline-flex items-center justify-center bg-[#2ECC96] text-[#0F1322] font-semibold font-manrope px-8 py-4 rounded-full hover:scale-105 hover:shadow-[0_0_20px_rgba(46,204,150,0.4)] transition-all duration-300",
+      "secondary": "inline-flex items-center justify-center bg-transparent border-2 border-[#2ECC96] text-[#2ECC96] font-semibold font-manrope px-8 py-4 rounded-full hover:bg-[#2ECC96]/10 transition-all duration-300"
+    },
+    "cards": {
+      "base": "p-8 rounded-2xl bg-white/5 border border-white/10 hover:-translate-y-2 hover:border-[#2ECC96]/50 hover:shadow-2xl hover:shadow-[#2ECC96]/10 transition-all duration-300 group"
+    },
+    "inputs": {
+      "base": "w-full bg-[#0F1322] border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-[#2ECC96] focus:ring-1 focus:ring-[#2ECC96] transition-all"
+    }
+  },
+  "motion_and_interactions": {
+    "scroll_reveal": {
+      "hidden": "opacity-0 translate-y-8",
+      "visible": "opacity-100 translate-y-0 transition-all duration-700 ease-out"
+    },
+    "hero_parallax": "Subtle Y-axis translation tied to scroll progress using Framer Motion.",
+    "floating_elements": "Continuous slow Y-axis oscillation (e.g., y: [0, -20, 0]) for code snippets and abstract visuals in the hero section.",
+    "counters": "Use Framer Motion 'useInView' to trigger count-up animations for statistics in 'Quem Somos' section.",
+    "whatsapp_pulse": "Continuous ping/pulse animation on the fixed bottom-right WhatsApp button."
+  },
+  "media": {
+    "icons": "lucide-react for UI icons, highly recommend using simple and sleek stroked icons.",
+    "images": {
+      "hero_abstract": {
+        "url": "https://images.unsplash.com/photo-1758073519996-6d3c63b4922c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTZ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBkYXJrfGVufDB8fHx8MTc4MzI3NTU2NXww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract blue/mint glowing dots forming wave patterns, used as subtle background texture."
+      },
+      "portfolio_mockups": [
+        "https://images.unsplash.com/photo-1558655146-d09347e92766?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGVzaWduJTIwZGVza3RvcCUyMG1vY2t1cHxlbnwwfHx8fDE3ODMyNzU1NjZ8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGVzaWduJTIwZGVza3RvcCUyMG1vY2t1cHxlbnwwfHx8fDE3ODMyNzU1NjZ8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1527443195645-1133f7f28990?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjB3ZWJzaXRlJTIwZGVzaWduJTIwZGVza3RvcCUyMG1vY2t1cHxlbnwwfHx8fDE3ODMyNzU1NjZ8MA&ixlib=rb-4.1.0&q=85"
+      ],
+      "testimonial_portraits": [
+        "https://images.unsplash.com/photo-1758535768411-13b8802d6731?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBtb2Rlcm4lMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MzI3NTU2NXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1758600587730-a11917c13b85?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBtb2Rlcm4lMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MzI3NTU2NXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1765776830139-72b2184dae5a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDR8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBtb2Rlcm4lMjBwb3J0cmFpdCUyMGRhcmslMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc4MzI3NTU2NXww&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "instructions_to_main_agent": {
+    "general": "Build a highly interactive single-page application using React, Tailwind CSS, and Framer Motion. Content must be exclusively in Brazilian Portuguese.",
+    "testing": "All interactive elements (buttons, links, inputs, accordions) MUST have a `data-testid` attribute in kebab-case. Example: `data-testid=\"hero-whatsapp-button\"`.",
+    "sections": {
+      "header": "Sticky glassmorphism header (`backdrop-blur-xl`). Logo is '< >' in Navy (or white for contrast) with Mint dots, text 'Scriptool' in bold sans-serif. Smooth scrolling links to anchors.",
+      "hero": "Headline 'Sua empresa merece existir online'. Use the hero_abstract image blended heavily into the background (`bg-black/60` overlay). On the right side, implement a floating code snippet box using JetBrains Mono font, animated with framer-motion.",
+      "quem_somos": "Mission statement alongside 3 animated statistics (e.g., 'Projetos Entregues', 'Anos de Experiência') using count-up effect on scroll.",
+      "servicos": "Bento grid with 6 cards. Hover effect should gently lift the card and highlight the border in mint green. Add a distinct Lucide icon for each service.",
+      "como_funciona": "A vertical or horizontal stepper/timeline animation. Each step highlights sequentially on scroll (Briefing -> Design -> Desenvolvimento -> Entrega -> Suporte).",
+      "portfolio": "Grid of mockups. Use images provided in `media`. Include a simple client-side filter (e.g., 'Todos', 'Institucional', 'E-commerce'). Overlay mint tint with zoom effect on image hover.",
+      "depoimentos": "A sleek carousel or horizontal scroll area containing user testimonials. Use the portraits provided.",
+      "planos": "3 pricing tiers. Highlight the middle tier ('Profissional') with a mint border and a 'Mais Popular' badge. Buttons link to WhatsApp with pre-filled messages.",
+      "faq": "Use an accordion component for FAQ. Clean, minimal borders.",
+      "footer_and_fab": "Dark footer with copyright and links. Floating WhatsApp button on bottom right MUST pulse continuously and link to 'https://wa.me/5541987869936'."
+    },
+    "font_setup": "Import Sora, Manrope, and JetBrains Mono from Google Fonts in the main index.css or index.html.",
+    "accessibility": "Ensure text contrast meets APCA/WCAG standards. Do not rely solely on color for active states."
+  }
+}

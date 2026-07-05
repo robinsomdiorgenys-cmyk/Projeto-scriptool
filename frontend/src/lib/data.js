@@ -54,19 +54,31 @@ export const TESTIMONIALS = [
     name: "Mariana Costa",
     role: "Clínica Vitalle",
     text: "Antes do site, dependíamos só de indicação. Hoje mais da metade dos nossos agendamentos vem pelo Google. A Scriptool entregou em uma semana, exatamente como prometido.",
-    img: "https://images.unsplash.com/photo-1758535768411-13b8802d6731?crop=entropy&cs=srgb&fm=jpg&q=85&w=400",
+    img: "https://customer-assets.emergentagent.com/job_scriptool-preview/artifacts/ab4d1vsq_images%20%284%29.jpeg",
   },
   {
     name: "Ricardo Almeida",
     role: "Café Moinho",
     text: "Eu não entendia nada de internet. Eles cuidaram de tudo: domínio, hospedagem, textos. O site ficou lindo e meus clientes elogiam direto.",
-    img: "https://images.unsplash.com/photo-1758600587730-a11917c13b85?crop=entropy&cs=srgb&fm=jpg&q=85&w=400",
+    img: "https://customer-assets.emergentagent.com/job_scriptool-preview/artifacts/yo0ihezo_CAIOBRAZ11.webp",
   },
   {
     name: "Fernanda Lima",
     role: "Loja Aurora",
     text: "Minha loja virtual triplicou as vendas em três meses. O suporte é rápido e sempre me ajudam quando preciso mudar alguma coisa.",
-    img: "https://images.unsplash.com/photo-1765776830139-72b2184dae5a?crop=entropy&cs=srgb&fm=jpg&q=85&w=400",
+    img: "https://customer-assets.emergentagent.com/job_scriptool-preview/artifacts/gwqozn4q_images%20%283%29.jpeg",
+  },
+  {
+    name: "Bruno Ferreira",
+    role: "Studio Fit",
+    text: "A landing page ficou pronta em poucos dias e o resultado foi imediato: agenda cheia de aulas experimentais. Trabalho muito profissional do início ao fim.",
+    img: "https://customer-assets.emergentagent.com/job_scriptool-preview/artifacts/ndxh21ep_homem-elegante-e-confiante-com-tatuagens-posando-na-varanda-do-apartamento_74855-2711.avif",
+  },
+  {
+    name: "Lucas Martins",
+    role: "Pet Amigo",
+    text: "Melhor investimento que fiz no meu negócio. O site carrega rápido, aparece no Google e a integração com o WhatsApp facilitou demais o atendimento.",
+    img: "https://customer-assets.emergentagent.com/job_scriptool-preview/artifacts/fo63djma_photo-1695927621677-ec96e048dce2.avif",
   },
 ];
 

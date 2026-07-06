@@ -82,10 +82,13 @@ export const TESTIMONIALS = [
   },
 ];
 
+export const PROMO_END = new Date("2026-07-20T23:59:59-03:00");
+
 export const PLANS = [
   {
     name: "Básico",
     price: "R$ 897",
+    promoPrice: "R$ 448,50",
     desc: "Para quem precisa marcar presença online agora.",
     features: ["Site de até 3 seções", "Design responsivo", "Botão de WhatsApp", "Domínio e hospedagem (1 ano)", "Entrega em até 7 dias"],
     highlight: false,
@@ -93,6 +96,7 @@ export const PLANS = [
   {
     name: "Profissional",
     price: "R$ 1.497",
+    promoPrice: "R$ 748,50",
     desc: "O mais escolhido por pequenas e médias empresas.",
     features: ["Site completo de até 7 seções", "Design personalizado", "SEO básico incluso", "Formulário + WhatsApp integrado", "Domínio e hospedagem (1 ano)", "1 mês de suporte grátis"],
     highlight: true,
@@ -100,6 +104,7 @@ export const PLANS = [
   {
     name: "Premium",
     price: "R$ 2.497",
+    promoPrice: "R$ 1.248,50",
     desc: "Solução completa com loja virtual ou múltiplas páginas.",
     features: ["Site institucional + E-commerce", "Páginas ilimitadas", "SEO avançado", "Integrações personalizadas", "Domínio e hospedagem (1 ano)", "3 meses de suporte grátis"],
     highlight: false,

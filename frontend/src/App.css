@@ -20,3 +20,52 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #2ecc96;
 }
+
+@keyframes flicker {
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    45% {
+        opacity: 0.75;
+        transform: scale(0.92) rotate(-3deg);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(1.08) rotate(2deg);
+    }
+}
+
+.animate-flicker {
+    animation: flicker 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+    0%,
+    100% {
+        box-shadow: 0 4px 14px rgba(255, 77, 61, 0.35);
+    }
+    50% {
+        box-shadow: 0 4px 22px rgba(255, 107, 74, 0.6);
+    }
+}
+
+.animate-pulse-soft {
+    animation: pulse-soft 1.6s ease-in-out infinite;
+}
+
+@keyframes tick {
+    from {
+        opacity: 0.3;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-tick {
+    animation: tick 0.3s ease-out;
+}

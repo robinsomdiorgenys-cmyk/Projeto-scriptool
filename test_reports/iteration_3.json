@@ -1,0 +1,22 @@
+{
+  "summary": "Frontend-only testing of Scriptool promo feature (Planos section). Verified countdown, promo badges, striked original prices, mint-green promo prices, 'MAIS POPULAR' badge coexistence, CTA WhatsApp hrefs with 50% OFF, real-time countdown tick, and automatic expiration via page.clock.install to 2026-07-25 (post PROMO_END). All acceptance criteria pass; zero console errors in both active and expired states.",
+  "backend_issues": {"critical": [], "minor": []},
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Pricing.jsx is well-scoped and clean. getTimeLeft is recomputed each tick using module-scoped PROMO_END; correctly returns null on expiration, cleanly toggling promoActive.",
+    "Minor UX suggestion (non-blocking): consider aria-live on countdown seconds for a11y, and localizing 'MIN'/'SEG' labels (currently uppercased via CSS which is fine)."
+  ],
+  "updated_files": [],
+  "success_rate": {"backend": "N/A (skipped)", "frontend": "100%"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "Promo feature fully validated. Active state: countdown ~15d 02h 50m visible, tick works (seg 49→47 in 2.5s), all 3 cards show 50% OFF badge, line-through 'de R$ 897/1.497/2.497', promo prices 'R$ 448,50 / 748,50 / 1.248,50' in #2ECC96 with 'por tempo limitado', CTA hrefs contain '50%25%20OFF'. Expired state (using page.clock.install(time='2026-07-25T12:00:00Z')): no countdown, no promo-badge, no original/promo-price testids, cards show full price 'R$ 897 / R$ 1.497 / R$ 2.497 / projeto', CTA hrefs do not contain '50%25%20OFF'. 'MAIS POPULAR' badge still visible on Profissional card in both states.",
+  "note_on_prev_iterations": "Iterations 1 & 2 covered depoimentos/hero/general flows at 100%; not re-tested per instructions."
+}

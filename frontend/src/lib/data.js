@@ -1,5 +1,5 @@
 export const WHATSAPP = "https://wa.me/5541987869936";
-export const INSTAGRAM = "https://www.instagram.com/stonkmind/";
+export const INSTAGRAM = "https://www.instagram.com/scriptool/";
 
 export const waLink = (msg) =>
   `${WHATSAPP}?text=${encodeURIComponent(msg)}`;

@@ -56,7 +56,7 @@ export const Footer = () => (
             </li>
             <li>
               <a href={INSTAGRAM} target="_blank" rel="noopener noreferrer" className="hover:text-[#2ECC96] transition-colors">
-                @stonkmind
+                @scriptool
               </a>
             </li>
             <li>Curitiba — PR, Brasil</li>
